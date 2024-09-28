@@ -1,7 +1,10 @@
 ﻿using GameZone.Models;
 
 namespace GameZone.Data;
-
+/// <summary>
+/// this class will represent the connection line between the tables inside your database and how you can access them through a class by using the simple way of doing this
+/// inside this class you will add all the entities that you need to represent their own table in the shape of class to make the access and the operation over these tables (class) more easier
+/// </summary>
 public class ApplicationDbContext : DbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -14,6 +17,10 @@ public class ApplicationDbContext : DbContext
     public DbSet<Device> Devices { get; set; }
     public DbSet<GameDevice> GameDevices { get; set; }
 
+    /// <summary>
+    /// this method will be invoked when your application runs and make a connection to your own database and everything inside this method will be applied on your tables inside your database such as fluenapi and also the database seeding
+    /// </summary>
+    /// <param name="modelBuilder"></param>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Category>()
@@ -36,6 +43,7 @@ public class ApplicationDbContext : DbContext
                 new Device { Id = 4, Name = "PC", Icon = "bi bi-pc-display" }
             });
 
+        // this will add a candanite key (more than one attribute will be the key of this tabel)
         modelBuilder.Entity<GameDevice>()
             .HasKey(e => new { e.GameId, e.DeviceId });
 

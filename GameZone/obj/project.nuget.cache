@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vRsKhi9oRMV12WxHP4QKbxiy7jiU/Oe6AzC0ilut4mXmf1Pe6C1jMcm6++dEGmx6yu3LU6MXZLrK0QOma5w4BQ==",
+  "dgSpecHash": "tV+NmJQB0Hg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ZeeZo\\Desktop\\dot net projects\\GameZone\\GameZone\\GameZone.csproj",
+  "projectFilePath": "C:\\Users\\ZeeZo\\Desktop\\My Projects\\GamingWebsite\\GameZone\\GameZone.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZeeZo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ZeeZo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

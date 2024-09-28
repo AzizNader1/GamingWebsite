@@ -1,5 +1,9 @@
 ﻿namespace GameZone.Attributes;
-
+/// <summary>
+/// this class has one goal is to check if the extention of the uploaded file is accepted or not 
+/// and will do this by making an inherit from the ValidationAttribute class and override the IsValid method which exist in that class
+/// and will reutrn success if the extention is accepted and error message if it is not accepted
+/// </summary>
 public class AllowedExtensionsAttribute : ValidationAttribute
 {
     private readonly string _allowedExtensions;
